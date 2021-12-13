@@ -8,3 +8,18 @@ github- remote repository service
 //after added new content, changes to be either commited or we can remove the added one to previous stage
 //git commit -m "message to be added"
 //git restore --staged <file>..." to unstage the file added ie. the changes will be unstaged
+
+//to add and commit at same time  use -a flag
+use git commit -m"message" -a
+
+//lets delete file file1.txt by mistake and then using git we will be getting it back > rm -rf file1.txt
+//and later commited all changes including deleion of file.
+//now to get back i have to go back to previous commit , so i have to remove current commit from history of commits
+//each commit has a hash id, and each built on top of each other, so we cant delete in between
+//just use git reset commithashwhichwe get from gitl log comand
+//we have to reset the commit to the commit we wnat
+//and this will make all the commits deleted just above it
+git reset 2a3b37a6304c96c1e8de1a3d45835cecdeaab647
+and 
+Unstaged changes after reset:
+M       file1.txt
