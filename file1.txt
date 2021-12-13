@@ -51,4 +51,3 @@ Dropped refs/stash@{0} (f8648ca1cefba00a8c8fc83df5126558fd637eb8)
 lalit rawat@luck MINGW64 ~/Desktop/PrjTo/gitInitial (master)
 $ git stash clear
 
-
