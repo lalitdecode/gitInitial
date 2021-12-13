@@ -1,2 +1,10 @@
 Git-version control system
 github- remote repository service
+
+//commands
+//git status - to check current status
+//git log- -to log all the logs
+//git add filename or . to add all will bring the changes added to commit
+//after added new content, changes to be either commited or we can remove the added one to previous stage
+//git commit -m "message to be added"
+//git restore --staged <file>..." to unstage the file added ie. the changes will be unstaged
