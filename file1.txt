@@ -23,3 +23,32 @@ git reset 2a3b37a6304c96c1e8de1a3d45835cecdeaab647
 and 
 Unstaged changes after reset:
 M       file1.txt
+
+
+//workign of git stash, git stash pop and git stash clear
+
+//git stash
+alit rawat@luck MINGW64 ~/Desktop/PrjTo/gitInitial (master)
+$ git stash
+Saved working directory and index state WIP on master: 3031b1a trial txt file added:
+
+lalit rawat@luck MINGW64 ~/Desktop/PrjTo/gitInitial (master)
+$ git stash pop
+Removing trial.txt
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   trial2.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+        deleted:    trial.txt
+
+Dropped refs/stash@{0} (f8648ca1cefba00a8c8fc83df5126558fd637eb8)
+
+lalit rawat@luck MINGW64 ~/Desktop/PrjTo/gitInitial (master)
+$ git stash clear
+
+
